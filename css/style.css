@@ -29,6 +29,10 @@ h1, h2, h3,h4 {
 }
 
 .big-text {
+  font-size: 30px;
+}
+
+.medium-text {
   font-size: 20px;
 }
 
@@ -50,6 +54,15 @@ h1, h2, h3,h4 {
   text-align: right;
 }
 
+.logo {
+  line-height: 24px;
+}
+
+.logo img {
+  height: 14px;
+  vertical-align: middle;
+}
+
 /* Menu */
 .menu {
   list-style-type: none;
@@ -57,7 +70,9 @@ h1, h2, h3,h4 {
 
 .menu li {
   display: inline-block;
-  padding-left: 20px;}
+  padding-left: 20px;
+  line-height: 22px;
+}
 
 .menu:first-child li:last-child {
   padding-right: 5px;
@@ -131,12 +146,42 @@ h1, h2, h3,h4 {
 }
 /* Fine Sezione Prodotti */
 
+/* Sezione Telefono */
+.phone .helbiz-banner {
+  height: 350px;
+  background-image: url("../img/HelbizBanner.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+.phone .helbiz-banner img {
+  width: 300px;
+  position: relative;
+  top: 30%;
+}
+
+.phone .phone-title {
+  height: 150px;
+  width: 70%;
+  margin:auto;
+  position: relative;
+}
+
+.title-content {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 95px;
+}
+/* Fine Sezione Telefono */
+
 /* FINE MAIN */
 
 
 /* MEDIA QUERIES */
 
-/* Mobile */
+/* MOBILE */
 @media all and (max-width: 767px) {
 
   /* Header */
@@ -147,5 +192,39 @@ h1, h2, h3,h4 {
   .teaser h1 {
     font-size: 38px;
   }
+
+  /* Sezione Telefono */
+  .phone .phone-title {
+    height: auto;
+  }
+
+  .title-content {
+    position:static;
+    transform: none;
+    padding-top:0;
+  }
+
+  .title-content.first{
+    padding-top: 215px;
+  }
+
 }
+
+/* TABLET */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .phone .phone-title {
+    height: auto;
+  }
+
+  .title-content {
+    position:static;
+    transform: none;
+    padding-top:0;
+  }
+
+  .title-content.first{
+    padding-top: 215px;
+  }
+}
+
 /* FINE MEDIA QUERIES */
