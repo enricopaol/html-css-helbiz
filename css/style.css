@@ -1,7 +1,41 @@
 /* COMMON */
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
+
+h1, h2, h3,h4 {
+  font-weight: 600;
+}
+
+.padding-block-20 {
+  padding: 20px 0;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.big-title {
+  font-size: 45px;
+}
+
+.medium-title {
+  font-size: 35px;
+}
+
+.small-title {
+  font-size: 25px;
+}
+
+.big-text {
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
 /* FINE COMMON */
 
 /* HEADER */
@@ -34,7 +68,6 @@ body {
   text-decoration: none;
   font-size: 11px;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .menu.lang li {
@@ -52,8 +85,67 @@ body {
   color: black;
   font-size: 25px;
 }
-
 /* Fine Menu */
 /* Fine Nav Top */
 
+/* Jumbotron */
+.jumbotron {
+  height: 550px;
+  background-image: url("../img/hero-bg.jpg");
+}
+
+.jumbotron .teaser {
+  color: white;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Fine Jumbotron */
+
 /* FINE HEADER */
+
+
+/* MAIN */
+
+/* Sezione Prodotti */
+.products .inner-content {
+  padding: 20px;
+}
+
+.products .content-col {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.products .content-col img {
+  width: 100%;
+}
+
+.products .content-col a {
+  text-decoration: none;
+}
+/* Fine Sezione Prodotti */
+
+/* FINE MAIN */
+
+
+/* MEDIA QUERIES */
+
+/* Mobile */
+@media all and (max-width: 767px) {
+
+  /* Header */
+  .jumbotron .teaser {
+    width: 70%;
+  }
+
+  .teaser h1 {
+    font-size: 38px;
+  }
+}
+/* FINE MEDIA QUERIES */
