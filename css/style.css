@@ -1,11 +1,11 @@
 /* COMMON */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1, h2, h3,h4 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .padding-block-20 {
@@ -38,6 +38,13 @@ h1, h2, h3,h4 {
 
 .small-text {
   font-size: 12px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* FINE COMMON */
@@ -147,6 +154,9 @@ h1, h2, h3,h4 {
 /* Fine Sezione Prodotti */
 
 /* Sezione Telefono */
+.phone {
+  padding: 20px 0 80px 0px;
+}
 .phone .helbiz-banner {
   height: 350px;
   background-image: url("../img/HelbizBanner.jpg");
@@ -161,7 +171,7 @@ h1, h2, h3,h4 {
 }
 
 .phone .phone-title {
-  height: 150px;
+  height: 170px;
   width: 70%;
   margin:auto;
   position: relative;
@@ -176,6 +186,106 @@ h1, h2, h3,h4 {
 }
 /* Fine Sezione Telefono */
 
+/* Sezione Discover */
+/* Cta Orizzontale */
+.discover {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.discover .cta {
+  height: 500px;
+  background-size: cover;
+}
+
+/* CTA Orizzontale */
+.discover .cta.horizontal {
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+}
+
+.discover .container {
+  height: 100%;
+}
+
+.discover .container [class*="col-"] {
+  height: 100%;
+}
+
+.cta.horizontal .inner-content {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cta.horizontal .inner-content .content-right {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.content-right .centered {
+  width: 70%;
+}
+
+.content-right .centered a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CTA Verticali */
+
+.cta.vertical .inner-content {
+  padding:30px;
+}
+
+.cta.vertical .inner-content.left {
+  padding-left: 0;
+  height: 100%;
+}
+.cta.vertical .inner-content.right {
+  padding-right: 0;
+  height: 100%;
+}
+
+.cta.vertical .inner-content .content-col {
+  color: white;
+  text-align: center;
+  padding: 30px 30px 0 30px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.cta.vertical .inner-content .content-col a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.cta.vertical .content-col img {
+  width: 100%;
+  position: relative;
+  top: 90px;
+  margin-top: -90px;
+}
+
+.cta.vertical .inner-content .content-col.left {
+  background: linear-gradient(#41566a,#252f38) 50% no-repeat;
+}
+
+.cta.vertical .inner-content .content-col.right {
+  background-image: url(../img/cities-1500.jpg);
+  background-size: cover;
+}
+
+
+
+
+/* Fine Sezione Discover */
+
 /* FINE MAIN */
 
 
@@ -185,6 +295,10 @@ h1, h2, h3,h4 {
 @media all and (max-width: 767px) {
 
   /* Header */
+  .logo {
+    line-height: 27px;
+  }
+
   .jumbotron .teaser {
     width: 70%;
   }
@@ -193,9 +307,16 @@ h1, h2, h3,h4 {
     font-size: 38px;
   }
 
+  /* Sezione Prodotti */
+  .products .inner-content {
+    padding: 30px;
+  }
+
   /* Sezione Telefono */
   .phone .phone-title {
     height: auto;
+    width: auto;
+    padding-left: 60px;
   }
 
   .title-content {
@@ -205,15 +326,52 @@ h1, h2, h3,h4 {
   }
 
   .title-content.first{
-    padding-top: 215px;
+    padding-top: 240px;
   }
+
+  .title-content h2 {
+    padding-bottom: 20px;
+  }
+
+  /* Seziione Discover */
+
+  .cta.horizontal .inner-content .content-right {
+    width: 100%;
+  }
+
+  .cta.vertical .inner-content {
+    padding:30px;
+  }
+
+  .cta.vertical .inner-content.left {
+    padding-left:30px;
+  }
+
+  .cta.vertical .inner-content.right {
+    padding-right:30px;
+  }
+  
 
 }
 
 /* TABLET */
 @media all and (min-width: 768px) and (max-width: 991px) {
+
+  /* Header */
+  .logo {
+    line-height: 27px;
+  }
+
+  /* Sezione Prodotti */
+  .products .inner-content {
+    padding: 30px; 
+  }
+
+  /* Sezione Telefono */
   .phone .phone-title {
     height: auto;
+    width: auto;
+    padding-left: 60px;
   }
 
   .title-content {
@@ -223,7 +381,25 @@ h1, h2, h3,h4 {
   }
 
   .title-content.first{
-    padding-top: 215px;
+    padding-top: 240px;
+  }
+
+  .title-content h2 {
+    padding-bottom:20px;
+  }
+
+  /* Sezione Discover */
+  .discover {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .discover .cta.horizontal {
+    background-position: 33% 50%;
+  }
+
+  .cta.vertical .inner-content {
+    padding: 30px 0;
   }
 }
 
